@@ -635,6 +635,11 @@ video {
   margin-right: 6rem;
 }
 
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -701,6 +706,10 @@ video {
 
 .mb-20{
   margin-bottom: 5rem;
+}
+
+.mb-16{
+  margin-bottom: 4rem;
 }
 
 .block{
@@ -785,6 +794,26 @@ video {
 
 .w-32{
   width: 8rem;
+}
+
+.w-5\/6{
+  width: 83.333333%;
+}
+
+.w-4\/6{
+  width: 66.666667%;
+}
+
+.w-5\/12{
+  width: 41.666667%;
+}
+
+.w-80{
+  width: 20rem;
+}
+
+.w-2{
+  width: 0.5rem;
 }
 
 .flex-col{
@@ -938,6 +967,21 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-32{
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pl-2{
   padding-left: 0.5rem;
 }
@@ -948,6 +992,10 @@ video {
 
 .text-center{
   text-align: center;
+}
+
+.align-middle{
+  vertical-align: middle;
 }
 
 .font-body{
@@ -1165,6 +1213,12 @@ video {
 .hover\:shadow:hover{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-2xl:hover{
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 

@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarungan</title>
     <link rel="stylesheet" href="./output.css">
+    <script src="main.js"></script> 
 </head>
 <body class="font-body m-0 text-stone-900">
     <header>
+        <div class=" bg-gray-100 absolute text-sm text-center w-56 shadow-md p-3 z-20" id="disclaimer-notif" style="display: none;">
+            <p>&#9432 Website ini dibuat tanpa adanya persetujuan terhadap brand yang terkait.</p>
+        </div>
         <div class="disclaimer bg-gray-100 text-sm py-2 text-center">
-            <p>Tidak ada produk asli yang dijual di halaman ini. <a class="text-blue-500 hover:cursor-pointer">Info lebih lanjut</a></p>
+            <p>Tidak ada produk asli yang dijual di halaman ini. <a class="text-blue-500 hover:cursor-pointer" onmouseover="hoverdiv(event, 1)" onmouseout="hoverdiv(event, 0)" id="info">Info lebih lanjut &#9432</a></p>
         </div>
         <div class="navbar bg-white p-2 mx-24 items-center justify-between flex">
             <div class="left flex items-center">
                 <a href=""><img src="/assets/Logo-removebg-preview.png" alt="" class="w-8"></a>
                 <nav class="mx-8 text-sm">
                     <ul>
-                        <li class="inline-block mx-4"><a href="">Dashboard</a></li>
-                        <li class="inline-block mx-4"><a href="">Produk</a></li>
-                        <li class="inline-block mx-4"><a href="">Aksesoris</a></li>
-                        <li class="inline-block mx-4"><a href="">Dukungan</a></li>
+                        <li class="inline-block mx-4 hover:text-gray-500 hover:drop-shadow-2xl"><a href="">Dashboard</a></li>
+                        <li class="inline-block mx-4 hover:text-gray-500 hover:drop-shadow-2xl"><a href="#product">Produk</a></li>
+                        <li class="inline-block mx-4 hover:text-gray-500 hover:drop-shadow-2xl"><a href="#accessories">Aksesoris</a></li>
+                        <li class="inline-block mx-4 hover:text-gray-500 hover:drop-shadow-2xl"><a href="#support">Dukungan</a></li>
                     </ul>
                 </nav>
             </div>
@@ -32,94 +36,157 @@
             <div class="toptext absolute w-screen z-10">
                 <h1 class="text-6xl font-bold text-white mt-36">SARUNGAN</h1>
                 <p class="text-gray-50 text-xl">Sarung premium yang anda butuhkan</p>
-                <a href="#product"><button class="black-btn bg-black rounded-full px-6 py-2 border-white border-2 hover:bg-white text-white hover:text-black hover:border-black hover:scale-110 hover:drop-shadow-2xl transition-all duration-200 mt-12 mb-36">
+                <a href="#product"><button class="black-btn bg-black rounded-full px-8 py-3 border-white hover:bg-white text-white hover:text-black hover:scale-105 hover:drop-shadow-2xl transition-all duration-100 mt-12 mb-36">
                     Telusuri lebih banyak
                 </button>
                 </a>
             </div>
-            <img src="/assets/sarung.jpg" alt="Sarung" class="object-cover w-screen brightness-50 blur-sm" style="height: 450px;">
+            <img src="/assets/sarung.jpg" alt="Sarung" class="object-cover w-screen brightness-50" style="height: 450px;">
         </div>
     </header>
 
     <main>
-        <h1 class="text-4xl text-center mt-20 mb-10 font-semibold" id="product">PRODUK TERBAIK</h1>
-        <div class="product mx-52 flex flex-wrap justify-evenly mb-32">
-            <div class="card border-2 rounded-xl hover:shadow-lg mx-2 mt-8">
-                <img src="/assets/Logo-removebg-preview.png" alt="" class="w-56">
-
-                <div class="info m-3">
-                    <h2 class="text-2xl font-semibold">WADIMOR</h2>
-                    <p>Desain yang paling unik!</p>
-                </div>
-
-                <div class="rightleft justify-between flex">
-                    <div class="blank"></div>
-                    <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
-                    See more ->
-                    </button>
-                </div>
-            </div>
-            <div class="card border-2 rounded-xl hover:shadow-lg mx-2 mt-8">
-                <img src="/assets/Logo-removebg-preview.png" alt="" class="w-56">
-
-                <div class="info m-3">
-                    <h2 class="text-2xl font-semibold">WADIMOR</h2>
-                    <p>Desain yang paling unik!</p>
-                </div>
-
-                <div class="rightleft justify-between flex">
-                    <div class="blank"></div>
-                    <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
-                    See more ->
-                    </button>
-                </div>
-            </div>
-            <div class="card border-2 rounded-xl hover:shadow-lg mx-2 mt-8">
-                <img src="/assets/Logo-removebg-preview.png" alt="" class="w-56">
-
-                <div class="info m-3">
-                    <h2 class="text-2xl font-semibold">WADIMOR</h2>
-                    <p>Desain yang paling unik!</p>
-                </div>
-
-                <div class="rightleft justify-between flex">
-                    <div class="blank"></div>
-                    <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
-                    See more ->
-                    </button>
-                </div>
-            </div>
-            <div class="card border-2 rounded-xl hover:shadow-lg mx-2 mt-8">
-                <img src="/assets/Logo-removebg-preview.png" alt="" class="w-56">
-
-                <div class="info m-3">
-                    <h2 class="text-2xl font-semibold">WADIMOR</h2>
-                    <p>Desain yang paling unik!</p>
-                </div>
-
-                <div class="rightleft justify-between flex">
-                    <div class="blank"></div>
-                    <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
-                    See more ->
-                    </button>
-                </div>
-            </div>
-            <div class="card border-2 rounded-xl hover:shadow-lg mx-2 mt-8">
-                <img src="/assets/Logo-removebg-preview.png" alt="" class="w-56">
-
-                <div class="info m-3">
-                    <h2 class="text-2xl font-semibold">WADIMOR</h2>
-                    <p>Desain yang paling unik!</p>
-                </div>
-
-                <div class="rightleft justify-between flex">
-                    <div class="blank"></div>
-                    <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
-                    See more ->
-                    </button>
-                </div>
-            </div>            
+        <div class="main-product flex text-center justify-center">
+            <h1 class="text-4xl text-center mt-20 mb-10 font-semibold" id="product">Produk Terbaik.&nbsp</h1>
+            <h1 class="text-4xl text-center mt-20 mb-10 font-semibold text-stone-500">Sarung kelas premium.</h1>
+        </div>
+        <div class="product mx-52 flex flex-wrap justify-evenly mb-20">
             
+            <div class="card border-2 rounded-xl hover:shadow-md mx-2 mt-8">
+                <img src="/assets/Logo-removebg-preview.png" alt="" class="w-56">
+                <div class="info m-3">
+                    <h2 class="text-2xl font-semibold">WADIMOR</h2>
+                    <p>Desain yang paling unik!</p>
+                </div>
+
+                <div class="rightleft justify-between flex">
+                    <div class="blank"></div>
+                    <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
+                    See more ->
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card border-2 rounded-xl hover:shadow-lg mx-2 mt-8">
+                <img src="/assets/Logo-removebg-preview.png" alt="" class="w-56">
+
+                <div class="info m-3">
+                    <h2 class="text-2xl font-semibold">WADIMOR</h2>
+                    <p>Desain yang paling unik!</p>
+                </div>
+
+                <div class="rightleft justify-between flex">
+                    <div class="blank"></div>
+                    <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
+                    See more ->
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card border-2 rounded-xl hover:shadow-lg mx-2 mt-8">
+                <img src="/assets/Logo-removebg-preview.png" alt="" class="w-56">
+
+                <div class="info m-3">
+                    <h2 class="text-2xl font-semibold">WADIMOR</h2>
+                    <p>Desain yang paling unik!</p>
+                </div>
+
+                <div class="rightleft justify-between flex">
+                    <div class="blank"></div>
+                    <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
+                    See more ->
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card border-2 rounded-xl hover:shadow-lg mx-2 mt-8">
+                <img src="/assets/Logo-removebg-preview.png" alt="" class="w-56">
+
+                <div class="info m-3">
+                    <h2 class="text-2xl font-semibold">WADIMOR</h2>
+                    <p>Desain yang paling unik!</p>
+                </div>
+
+                <div class="rightleft justify-between flex">
+                    <div class="blank"></div>
+                    <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
+                    See more ->
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card border-2 rounded-xl hover:shadow-lg mx-2 mt-8">
+                <img src="/assets/Logo-removebg-preview.png" alt="" class="w-56">
+
+                <div class="info m-3">
+                    <h2 class="text-2xl font-semibold">WADIMOR</h2>
+                    <p>Desain yang paling unik!</p>
+                </div>
+
+                <div class="rightleft justify-between flex">
+                    <div class="blank"></div>
+                    <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
+                    See more ->
+                    </button>
+                </div>
+            
+            </div>              
+        </div>
+
+        <div class="main-product flex text-center justify-center">
+            <h1 class="text-4xl text-center mt-20 mb-10 font-semibold" id="product">Aksesoris Pilihan.&nbsp</h1>
+            <h1 class="text-4xl text-center mt-20 mb-10 font-semibold text-stone-500">Tentukan gayamu.</h1>
+        </div>
+        <div class="product mx-52 flex flex-wrap justify-evenly mb-32">
+            
+            <div class="card border-2 rounded-xl hover:shadow-md mx-2 mt-8">
+                <img src="/assets/Logo-removebg-preview.png" alt="" class="w-56">
+                <div class="info m-3">
+                    <h2 class="text-2xl font-semibold">WADIMOR</h2>
+                    <p>Desain yang paling unik!</p>
+                </div>
+
+                <div class="rightleft justify-between flex">
+                    <div class="blank"></div>
+                    <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
+                    See more ->
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card border-2 rounded-xl hover:shadow-lg mx-2 mt-8">
+                <img src="/assets/Logo-removebg-preview.png" alt="" class="w-56">
+
+                <div class="info m-3">
+                    <h2 class="text-2xl font-semibold">WADIMOR</h2>
+                    <p>Desain yang paling unik!</p>
+                </div>
+
+                <div class="rightleft justify-between flex">
+                    <div class="blank"></div>
+                    <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
+                    See more ->
+                    </button>
+                </div>
+            </div>
+            
+            <div class="card border-2 rounded-xl hover:shadow-lg mx-2 mt-8">
+                <img src="/assets/Logo-removebg-preview.png" alt="" class="w-56">
+
+                <div class="info m-3">
+                    <h2 class="text-2xl font-semibold">WADIMOR</h2>
+                    <p>Desain yang paling unik!</p>
+                </div>
+
+                <div class="rightleft justify-between flex">
+                    <div class="blank"></div>
+                    <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
+                    See more ->
+                    </button>
+                </div>
+            </div>
+                  
+        </div>              
         </div>
 
         <div class="product-style bg-gray-800 text-white">
@@ -127,27 +194,27 @@
                 <h1 class="text-5xl font-semibold">TAMPIL KEREN</h1>
                 <p class="text-xl">dengan sarung khas <b>Indonesia.</b></p>
             </div>
-            <img src="/assets/sarungpjg.jpg" alt="Sarung" class="object-cover w-screen brightness-50 blur-sm h-96" id="katakata">
+            <img src="/assets/sarungpjg.jpg" alt="Sarung" class="object-cover w-screen brightness-50 h-96" id="katakata">
         </div>
     </main>
     
     <footer>
-        <div class="bottom flex justify-center w-full bg-white py-12">
+        <div class="bottom flex justify-center w-full bg-white py-12" id="support">
             <div class="logo p-2">
                 <img src="/assets/Logo-removebg-preview.png" alt="Logo" class="w-64">
             </div>
             <div class="divider w-1 bg-stone-200 mx-2"></div>
             <div class="web-desc w-3/12 m-4 pl-2 flex flex-col">
-                <h1 class="font-bold text-2xl text-stone-800">Sarungan</h1>
-                <p>Sarungan merupakan website penyedia informasi mengenai sarung yang terkenal di Indonesia. </p>
-                <p>2024 &copy d1azdn All rights reserved.</p>
+                <h1 class="font-bold text-xl text-stone-800">Sarungan</h1>
+                <p class="text-sm">Sarungan merupakan website penyedia informasi mengenai sarung yang terkenal di Indonesia. </p>
+                <p class="text-sm">2024 &copy d1azdn All rights reserved.</p>
             </div>
             <div class="divider w-1 bg-stone-200 mx-2"></div>
             <div class="href-bottom w-3/12 m-4 flex flex-col">
-                <h1 class="font-bold text-2xl text-stone-800 pl-2">Pindah ke</h1>
-                <a href="" class=" hover:text-white hover:bg-stone-800 transition-all duration-200 rounded-md px-2">Halaman awal</a>
-                <a href="#product" class=" hover:text-white hover:bg-stone-800 transition-all duration-200  rounded-md px-2">Produk</a>
-                <a href="#katakata" class=" hover:text-white hover:bg-stone-800 transition-all duration-200  rounded-md px-2" >Kata-Kata</a>
+                <h1 class="font-bold text-xl text-stone-800 pl-2">Pindah ke</h1>
+                <a href="" class=" hover:text-white hover:bg-stone-800 transition-all duration-200 rounded-md px-2 text-sm w-2/5">Halaman awal</a>
+                <a href="#product" class=" hover:text-white hover:bg-stone-800 transition-all duration-200  rounded-md px-2 text-sm w-2/5">Produk</a>
+                <a href="#katakata" class=" hover:text-white hover:bg-stone-800 transition-all duration-200  rounded-md px-2 text-sm w-2/5" >Kata-Kata</a>
             </div>
         </div>
     </footer>

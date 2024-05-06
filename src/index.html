@@ -15,19 +15,19 @@
         <div class="disclaimer bg-gray-100 text-sm py-2 text-center">
             <p>Tidak ada produk asli yang dijual di halaman ini. <a class="text-blue-500 hover:cursor-pointer" onmouseover="hoverdiv(event, 1)" onmouseout="hoverdiv(event, 0)" id="info">Info lebih lanjut &#9432</a></p>
         </div>
-        <div class="navbar bg-white p-2 mx-24 items-center justify-between flex">
+        <div class="navbar bg-white p-2 mx-24 items-center justify-between flex flex-col md:flex-row">
             <div class="left flex items-center">
-                <a href=""><img src="/assets/Logo-removebg-preview.png" alt="" class="w-8"></a>
-                <nav class="mx-8 text-sm">
+                <a href=""><img src="/assets/Logo-removebg-preview.png" alt="" class="w-16"></a>
+                <nav class="mx-8 text-sm hidden md:inline-block">
                     <ul>
-                        <li class="inline-block mx-4 hover:text-gray-500 hover:drop-shadow-2xl transition-all duration-100""><a href="">Dashboard</a></li>
-                        <li class="inline-block mx-4 hover:text-gray-500 hover:drop-shadow-2xl transition-all duration-100""><a href="#product">Produk</a></li>
-                        <li class="inline-block mx-4 hover:text-gray-500 hover:drop-shadow-2xl transition-all duration-100""><a href="#accessories">Aksesoris</a></li>
-                        <li class="inline-block mx-4 hover:text-gray-500 hover:drop-shadow-2xl transition-all duration-100""><a href="#support">Dukungan</a></li>
+                        <li class="md:inline-block mx-4 hover:text-gray-500 hover:drop-shadow-2xl transition-all duration-100"><a href="">Dashboard</a></li>
+                        <li class="md:inline-block mx-4 hover:text-gray-500 hover:drop-shadow-2xl transition-all duration-100"><a href="#product">Produk</a></li>
+                        <li class="md:inline-block mx-4 hover:text-gray-500 hover:drop-shadow-2xl transition-all duration-100"><a href="#accessories">Aksesoris</a></li>
+                        <li class="md:inline-block mx-4 hover:text-gray-500 hover:drop-shadow-2xl transition-all duration-100"><a href="#support">Dukungan</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="right flex justify-center items-center align-middle">
+            <div class="right hidden lg:flex justify-center items-center align-middle">
                 <a href="https://instagram.com/d1azdn" target="_blank" class="hover:scale-110 transition-all duration-100"><img src="/assets/instagram.jpg" alt="" class="w-8 mr-10"></a>
                 <a href="https://github.com/d1azdn" target="_blank" class="hover:scale-110 transition-all duration-100"><img src="/assets/github.jpg" alt="" class="w-8"></a>
             </div>
@@ -48,11 +48,11 @@
     <main>
         <div class="main-product flex text-center justify-center">
             <h1 class="text-4xl text-center mt-20 mb-10 font-semibold" id="product">Produk Terbaik.&nbsp</h1>
-            <h1 class="text-4xl text-center mt-20 mb-10 font-semibold text-stone-500">Sarung kelas premium.</h1>
+            <h1 class="text-4xl hidden md:flex text-center mt-20 mb-10 font-semibold text-stone-500">Sarung kelas premium.</h1>
         </div>
-        <div class="product mx-52 flex flex-wrap justify-evenly mb-16">
+        <div class="product mx-0 lg:mx-12 flex flex-wrap justify-evenly mb-16">
             
-            <div class="card border-2 rounded-xl hover:shadow-md px-8 mt-8 flex justify-between items-center w-5/6">
+            <div class="card border-2 rounded-xl hover:shadow-md px-8 mt-8 flex flex-col lg:flex-row justify-between items-center w-5/6">
                 <img src="/assets/wadimor.jpg" alt="" class="w-56">
                 <div class="info m-3">
                     <h2 class="text-2xl font-semibold">WADIMOR</h2>
@@ -62,12 +62,12 @@
                 <div class="rightleft justify-between flex">
                     <div class="blank"></div>
                     <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
-                    See more ->
+                    <a href="https://www.google.com/search?q=wadimor" target="_blank">See more -></a>
                     </button>
                 </div>
             </div>
             
-            <div class="card border-2 rounded-xl hover:shadow-lg px-8 mt-8 flex justify-between items-center w-5/6"">
+            <div class="card border-2 rounded-xl hover:shadow-lg px-8 mt-8 flex flex-col lg:flex-row justify-between items-center w-5/6"">
                 <img src="/assets/atlas.jpg" alt="" class="w-56">
 
                 <div class="info m-3">
@@ -78,12 +78,12 @@
                 <div class="rightleft justify-between flex">
                     <div class="blank"></div>
                     <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
-                    See more ->
+                        <a href="https://www.google.com/search?q=sarung+atlas" target="_blank">See more -></a>
                     </button>
                 </div>
             </div>
             
-            <div class="card border-2 rounded-xl hover:shadow-lg px-8 mt-8 flex justify-between items-center w-5/6"">
+            <div class="card border-2 rounded-xl hover:shadow-lg px-8 mt-8 flex flex-col lg:flex-row justify-between items-center w-5/6"">
                 <img src="/assets/gajahduduk.jpg" alt="" class="w-56">
 
                 <div class="info m-3">
@@ -94,12 +94,12 @@
                 <div class="rightleft justify-between flex">
                     <div class="blank"></div>
                     <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
-                    See more ->
+                        <a href="https://www.google.com/search?q=gajah+duduk" target="_blank">See more -></a>
                     </button>
                 </div>
             </div>
             
-            <div class="card border-2 rounded-xl hover:shadow-lg px-8 mt-8 flex justify-between items-center w-5/6"">
+            <div class="card border-2 rounded-xl hover:shadow-lg px-8 mt-8 flex flex-col lg:flex-row justify-between items-center w-5/6"">
                 <img src="/assets/tentrem.jpg" alt="" class="w-56">
 
                 <div class="info m-3">
@@ -110,12 +110,12 @@
                 <div class="rightleft justify-between flex">
                     <div class="blank"></div>
                     <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
-                    See more ->
+                        <a href="https://www.google.com/search?q=sarung+tentrem" target="_blank">See more -></a>
                     </button>
                 </div>
             </div>
             
-            <div class="card border-2 rounded-xl hover:shadow-lg px-8 mt-8 flex justify-between items-center w-5/6"">
+            <div class="card border-2 rounded-xl hover:shadow-lg px-8 mt-8 flex flex-col lg:flex-row justify-between items-center w-5/6"">
                 <img src="/assets/mangga.jpg" alt="" class="w-56">
 
                 <div class="info m-3">
@@ -126,7 +126,7 @@
                 <div class="rightleft justify-between flex">
                     <div class="blank"></div>
                     <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
-                    See more ->
+                        <a href="https://www.google.com/search?q=sarung+mangga" target="_blank">See more -></a>
                     </button>
                 </div>
             
@@ -135,9 +135,9 @@
 
         <div class="main-product flex text-center justify-center">
             <h1 class="text-4xl text-center mt-20 mb-10 font-semibold" id="accessories">Aksesoris Pilihan.&nbsp</h1>
-            <h1 class="text-4xl text-center mt-20 mb-10 font-semibold text-stone-500">Tentukan gayamu.</h1>
+            <h1 class="text-4xl hidden md:flex text-center mt-20 mb-10 font-semibold text-stone-500">Tentukan gayamu.</h1>
         </div>
-        <div class="product mx-52 flex flex-wrap justify-evenly mb-32">
+        <div class="product lg:mx-16 flex flex-wrap justify-evenly mb-32">
             
             <div class="card border-2 rounded-xl hover:shadow-md mx-2 mt-8 w-3/12">
                 <div class="image-center justify-center items-center align-middle flex my-2">
@@ -151,7 +151,7 @@
                 <div class="rightleft justify-between flex">
                     <div class="blank"></div>
                     <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
-                    See more ->
+                        <a href="https://www.google.com/search?q=peci+solat" target="_blank">See more -></a>
                     </button>
                 </div>
             </div>
@@ -169,7 +169,7 @@
                 <div class="rightleft justify-between flex">
                     <div class="blank"></div>
                     <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
-                    See more ->
+                        <a href="https://www.google.com/search?q=sorban" target="_blank">See more -></a>
                     </button>
                 </div>
             </div>
@@ -187,7 +187,7 @@
                 <div class="rightleft justify-between flex">
                     <div class="blank"></div>
                     <button class="card-btn border-2 border-black rounded-xl px-5 mt-10 mb-4 mx-4 hover:bg-black hover:text-white">
-                    See more ->
+                        <a href="https://www.google.com/search?q=sejadah+muslim" target="_blank">See more -></a>
                     </button>
                 </div>
             </div>
@@ -196,8 +196,8 @@
         </div>
 
         <div class="product-style bg-gray-800 text-white">
-            <div class="content py-40 pl-28 absolute z-10">
-                <h1 class="text-5xl font-semibold">TAMPIL KEREN</h1>
+            <div class="content py-40 pl-8 lg:pl-20 absolute z-10">
+                <h1 class="text-3xl lg:text-5xl font-semibold">TAMPIL KEREN</h1>
                 <p class="text-xl">dengan sarung khas <b>Indonesia.</b></p>
             </div>
             <img src="/assets/sarungpjg.jpg" alt="Sarung" class="object-cover w-screen brightness-50 h-96" id="katakata">
@@ -205,18 +205,18 @@
     </main>
     
     <footer>
-        <div class="bottom flex justify-center w-full bg-white py-12" id="support">
-            <div class="logo p-2">
+        <div class="bottom flex flex-col lg:flex-row lg:mx-24 justify-center w-full bg-white py-12" id="support">
+            <div class="logo p-2 hidden lg:flex">
                 <img src="/assets/Logo-removebg-preview.png" alt="Logo" class="w-64">
             </div>
-            <div class="divider w-1 bg-stone-200 mx-2"></div>
-            <div class="web-desc w-3/12 m-4 pl-2 flex flex-col">
+            <div class="divider w-1 bg-stone-200 mx-2 hidden lg:flex"></div>
+            <div class="web-desc w-2/3 m-4 pl-2 flex flex-col">
                 <h1 class="font-bold text-xl text-stone-800">Sarungan</h1>
                 <p class="text-sm">Sarungan merupakan website penyedia informasi mengenai sarung yang terkenal di Indonesia. </p>
                 <p class="text-sm">2024 &copy d1azdn All rights reserved.</p>
             </div>
             <div class="divider w-1 bg-stone-200 mx-2"></div>
-            <div class="href-bottom w-3/12 m-4 flex flex-col">
+            <div class="href-bottom w-2/3 m-4 flex flex-col">
                 <h1 class="font-bold text-xl text-stone-800 pl-2">Pindah ke</h1>
                 <a href="" class=" hover:text-white hover:bg-stone-800 transition-all duration-200 rounded-md px-2 text-sm w-2/5">Halaman awal</a>
                 <a href="#product" class=" hover:text-white hover:bg-stone-800 transition-all duration-200  rounded-md px-2 text-sm w-2/5">Produk</a>

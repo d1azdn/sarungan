@@ -11,3 +11,12 @@ function hoverdiv(e,num){
     else
         div.style.display = 'none';
 }
+
+window.addEventListener("scroll", () => {
+    let topbar = document.getElementById("navbar-hidden")
+    if (window.pageYOffset > 70) {
+        topbar.style.display = 'flex';
+    } else {
+        topbar.style.display = 'none';
+    }
+});

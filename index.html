@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarungan</title>
-    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="output.css">
     <script src="main.js"></script> 
 </head>
 <body class="font-body m-0 text-stone-900">
@@ -16,6 +16,23 @@
             <p>Tidak ada produk asli yang dijual di halaman ini. <a class="text-blue-500 hover:cursor-pointer" onmouseover="hoverdiv(event, 1)" onmouseout="hoverdiv(event, 0)" id="info">Info lebih lanjut &#9432</a></p>
         </div>
         <div class="navbar bg-white p-2 mx-24 items-center justify-between flex flex-col md:flex-row">
+            <div class="left flex items-center">
+                <a href=""><img src="assets/Logo-removebg-preview.png" alt="" class="w-16"></a>
+                <nav class="mx-8 text-sm hidden md:inline-block">
+                    <ul>
+                        <li class="md:inline-block mx-4 hover:text-gray-500 hover:drop-shadow-2xl transition-all duration-100"><a href="">Dashboard</a></li>
+                        <li class="md:inline-block mx-4 hover:text-gray-500 hover:drop-shadow-2xl transition-all duration-100"><a href="#product">Produk</a></li>
+                        <li class="md:inline-block mx-4 hover:text-gray-500 hover:drop-shadow-2xl transition-all duration-100"><a href="#accessories">Aksesoris</a></li>
+                        <li class="md:inline-block mx-4 hover:text-gray-500 hover:drop-shadow-2xl transition-all duration-100"><a href="#support">Dukungan</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right hidden lg:flex justify-center items-center align-middle">
+                <a href="https://instagram.com/d1azdn" target="_blank" class="hover:scale-110 transition-all duration-100"><img src="assets/instagram.jpg" alt="" class="w-8 mr-10"></a>
+                <a href="https://github.com/d1azdn" target="_blank" class="hover:scale-110 transition-all duration-100"><img src="assets/github.jpg" alt="" class="w-8"></a>
+            </div>
+        </div>
+        <div class="navbar-hidden z-50 w-full bg-white p-2 px-24 items-center justify-between flex-col md:flex-row shadow-md" id="navbar-hidden" style="display: none; position: fixed; top: 0%; z-index: 30;">
             <div class="left flex items-center">
                 <a href=""><img src="assets/Logo-removebg-preview.png" alt="" class="w-16"></a>
                 <nav class="mx-8 text-sm hidden md:inline-block">
@@ -137,9 +154,9 @@
             <h1 class="text-4xl text-center mt-20 mb-10 font-semibold" id="accessories">Aksesoris Pilihan.&nbsp</h1>
             <h1 class="text-4xl hidden md:flex text-center mt-20 mb-10 font-semibold text-stone-500">Tentukan gayamu.</h1>
         </div>
-        <div class="product lg:mx-16 flex flex-wrap justify-evenly mb-32">
+        <div class="product lg:mx-14 flex flex-wrap justify-center md:justify-evenly content-center mb-32 flex-col md:flex-row">
             
-            <div class="card border-2 rounded-xl hover:shadow-md mx-2 mt-8 w-3/12">
+            <div class="card border-2 rounded-xl hover:shadow-md mx-2 mt-8 w-3/4 md:w-3/12">
                 <div class="image-center justify-center items-center align-middle flex my-2">
                     <img src="assets/peci.jpg" alt="" class="w-56">
                 </div>
@@ -156,7 +173,7 @@
                 </div>
             </div>
             
-            <div class="card border-2 rounded-xl hover:shadow-lg mx-2 mt-8 w-3/12">
+            <div class="card border-2 rounded-xl hover:shadow-lg mx-2 mt-8 w-3/4 md:w-3/12">
                 <div class="image-center justify-center items-center align-middle flex my-2">
                     <img src="assets/sorban.jpg" alt="" class="w-56">
                 </div>
@@ -174,7 +191,7 @@
                 </div>
             </div>
             
-            <div class="card border-2 rounded-xl hover:shadow-lg mx-2 mt-8 w-3/12">
+            <div class="card border-2 rounded-xl hover:shadow-lg mx-2 mt-8 w-3/4 md:w-3/12">
                 <div class="image-center justify-center items-center align-middle flex my-2">
                     <img src="assets/sajadah.png" alt="" class="w-56">
                 </div>
